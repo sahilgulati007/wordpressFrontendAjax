@@ -19,7 +19,7 @@ function wpdocs_theme_name_scripts()
 //ajax function call
 add_action( 'wp_enqueue_scripts', 'wpdocs_theme_name_scripts');
 function add_register(){
-    echo json_encode("hello");
+    echo "hello";
     wp_die();
 }
 add_action( 'wp_ajax_nopriv_add_register', 'add_register' );
